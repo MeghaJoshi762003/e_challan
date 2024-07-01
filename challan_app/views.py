@@ -109,8 +109,8 @@ def createchallan(request):
 
 # Find your Account SID and Auth Token at twilio.com/console
 # and set the environment variables. See http://twil.io/secure
-        account_sid = 'AC6744357eb2547ad71c5914b20e32ffd5'
-        auth_token = 'a27ed41034a7f1f194a43386fb8ee8af'
+        # account_sid = 'AC6744357eb2547ad71c5914b20e32ffd5'
+        # auth_token = 'a27ed41034a7f1f194a43386fb8ee8af'
         client = Client(account_sid, auth_token)
         u=Universal.objects.get(Vehicle_number=vehicle)
         number=u.Phone_number
